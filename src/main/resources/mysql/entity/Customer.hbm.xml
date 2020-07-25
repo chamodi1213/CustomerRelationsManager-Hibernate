@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 15, 2020 9:35:57 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="customer_management" name="mysql.entity.Customer" optimistic-lock="version" table="customer">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="firstName" type="string">
+      <column length="100" name="first_name" not-null="true"/>
+    </property>
+    <property name="lastName" type="string">
+      <column length="100" name="last_name" not-null="true"/>
+    </property>
+    <property name="email" type="string">
+      <column length="100" name="email" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
